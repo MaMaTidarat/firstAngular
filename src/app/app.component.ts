@@ -1,3 +1,4 @@
+import { SharedService } from './services/shared.service';
 import { Com2Component } from './components/com2/com2.component';
 import { Com1Component } from './components/com1/com1.component';
 import { Component, ViewChild, OnInit } from '@angular/core';
@@ -16,6 +17,9 @@ export class AppComponent {
   @ViewChild("com2",{static:false}) com2:Com2Component;
   time1 =0;
 
+  constructor(public share :SharedService) {
+
+  }
  
 
   getResult() {

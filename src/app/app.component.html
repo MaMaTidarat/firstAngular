@@ -10,6 +10,6 @@
 <button (click)="onClickViewChild()" > ClickViewChild </button>
 
 
-
+<div> Login Status : {{ share.getStatus() }}</div>
 <app-com1 #com1 [count]="version" (change)="onchange1($event)"></app-com1> 
 <app-com2 #com2 [count2]="version" (change2)=resetVersion($event)></app-com2>
